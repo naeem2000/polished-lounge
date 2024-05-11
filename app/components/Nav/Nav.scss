@@ -1,0 +1,34 @@
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 46px 36px 0px;
+    background: var(--light-pink);
+
+    a {
+        margin-right: 28px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22.5px;
+        letter-spacing: 0.04em;
+        color: var(--pink);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 36px 0px;
+
+        .link {
+            display: none;
+        }
+    }
+}

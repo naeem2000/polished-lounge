@@ -1,1 +1,19 @@
-.hero {}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-pink);
+
+    .hero-title {
+        h1 {
+            font-family: 'Kaoly', sans-serif;
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 173.76px;
+            color: var(--white);
+            text-align: center;
+            margin-top: 140px;
+            margin-bottom: 210px;
+        }
+    }
+}

@@ -3,8 +3,10 @@ import './Hero.scss';
 
 export default function Hero() {
 	return (
-		<header className='hero'>
-			<h1>awe</h1>
-		</header>
+		<section className='hero'>
+			<div className='max-width'>
+				<h1>Hero</h1>
+			</div>
+		</section>
 	);
 }

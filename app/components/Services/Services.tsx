@@ -12,9 +12,38 @@ export default function Services() {
 		dots: true,
 		infinite: false,
 		speed: 500,
+		autoplaySpeed: 2000,
+		autoplay: false,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		className: 'slider',
+		lazyload: false,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false,
+				},
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false,
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+				},
+			},
+		],
 	};
 	return (
 		<section className='services'>
@@ -27,26 +56,63 @@ export default function Services() {
 				<div className='offer'>
 					<h2>Service we offer</h2>
 					<Slider {...settings}>
-						<div>
-							<h3>1</h3>
+						<div className='offered'>
+							<Image
+								src={'/manicure 1.png'}
+								width={128}
+								height={128}
+								alt='Manicure'
+							/>
+							<h3>MANICURE</h3>
 						</div>
-						<div>
-							<h3>2</h3>
+						<div className='offered'>
+							<Image
+								src={'/aromatherapy 1.png'}
+								width={128}
+								height={128}
+								alt='Pedicure'
+							/>
+							<h3>PEDICURE</h3>
 						</div>
-						<div>
-							<h3>3</h3>
+						<div className='offered'>
+							<Image src={'/wax 1.png'} width={128} height={128} alt='Wax' />
+							<h3>WAXING</h3>
 						</div>
-						<div>
-							<h3>4</h3>
+						<div className='offered'>
+							<Image
+								src={'/threading 1.png'}
+								width={128}
+								height={128}
+								alt='Threading'
+							/>
+							<h3>THREADING</h3>
 						</div>
-						<div>
-							<h3>5</h3>
+						<div className='offered'>
+							<Image
+								src={'/eye 1.png'}
+								width={128}
+								height={128}
+								alt='Brows & Lashes'
+							/>
+							<h3>BROWS & LASHES</h3>
 						</div>
-						<div>
-							<h3>6</h3>
+						<div className='offered'>
+							<Image
+								src={'/body-massage 1.png'}
+								width={128}
+								height={128}
+								alt='Massages'
+							/>
+							<h3>MASSAGES</h3>
 						</div>
-						<div>
-							<h3>7</h3>
+						<div className='offered'>
+							<Image
+								src={'/facial-mask 1.png'}
+								width={128}
+								height={128}
+								alt='Facials'
+							/>
+							<h3>FACIALS</h3>
 						</div>
 					</Slider>
 				</div>

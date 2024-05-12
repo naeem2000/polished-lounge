@@ -10,21 +10,65 @@
                 height: auto;
             }
         }
-    }
 
-    .offer {
-        margin-top: 61px;
 
-        h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 30px;
-            font-weight: 700;
-            line-height: 45px;
-            letter-spacing: 0.04em;
-            text-align: center;
-            color: var(--pink);
-            text-transform: uppercase;
-            margin-bottom: 90px;
+        .offer {
+            margin-top: 61px;
+
+            h2 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 45px;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color: var(--pink);
+                text-transform: uppercase;
+                margin-bottom: 90px;
+            }
+
+            .slider {
+
+                .offered {
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 292px !important;
+                    height: 321px;
+                    background: var(--lighter-pink);
+                    margin-bottom: 61px;
+
+                    h3 {
+                        margin-top: 55px;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        letter-spacing: 0.04em;
+                        color: var(--pink);
+                    }
+
+                }
+
+                .slick-dots li button:before {
+                    font-size: 10px !important;
+                }
+
+                .slick-dots li.slick-active button:before {
+                    color: var(--pink) !important;
+                }
+
+                .slick-dots li button:before {
+                    opacity: 1 !important;
+                    color: var(--light-pink) !important;
+                }
+
+                .slick-prev,
+                .slick-next {
+                    display: none !important;
+                }
+            }
         }
     }
 }
@@ -39,6 +83,89 @@
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .services {
+        .max-width {
+            .offer {
+                .slider {
+                    .offered {
+                        width: 220px !important;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        .max-width {
+
+            .offer {
+
+
+                .slider {
+
+                    .offered {
+                        width: 320px !important;
+                        margin-bottom: 30px;
+
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .services {
+        .max-width {
+
+            .offer {
+
+                h2 {
+                    margin-bottom: 55px;
+                    font-size: 30px;
+                }
+
+                .slider {
+
+                    .offered {
+                        width: 255px !important;
+                        margin-bottom: 30px;
+
+                        h3 {
+                            margin-top: 55px;
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            letter-spacing: 0.04em;
+                            color: var(--pink);
+                        }
+
+                    }
+
+                    .slick-dots li button:before {
+                        font-size: 10px !important;
+                    }
+
+                    .slick-dots li.slick-active button:before {
+                        color: var(--pink) !important;
+                    }
+
+                    .slick-dots li button:before {
+                        opacity: 1 !important;
+                        color: var(--light-pink) !important;
+                    }
+                }
             }
         }
     }

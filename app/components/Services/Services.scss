@@ -1,0 +1,45 @@
+.services {
+    .max-width {
+        .nail-samples {
+            display: flex;
+            flex-direction: row;
+
+            img {
+                max-width: 482px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .offer {
+        margin-top: 61px;
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 45px;
+            letter-spacing: 0.04em;
+            text-align: center;
+            color: var(--pink);
+            text-transform: uppercase;
+            margin-bottom: 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .services {
+        .max-width {
+            padding: 0;
+
+            .nail-samples {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

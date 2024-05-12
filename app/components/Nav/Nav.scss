@@ -1,9 +1,9 @@
 nav {
-    display: flex;
     width: 100%;
-    justify-content: flex-end;
     padding: 46px 36px 0px;
-    background: var(--light-pink);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
 
     a {
         margin-right: 28px;
@@ -19,16 +19,18 @@ nav {
             margin-right: 0;
         }
     }
+
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 768px) {
     nav {
+        padding: 20px 36px 0px;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 20px 36px 0px;
 
         .link {
             display: none;
         }
+
     }
 }

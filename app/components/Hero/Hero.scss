@@ -1,1 +1,72 @@
-.hero {}
+.hero {
+    background: var(--light-pink);
+
+    .hero-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-family: 'Kaoly', sans-serif;
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 173.76px;
+            color: var(--white);
+            text-align: center;
+            margin-top: 140px;
+            margin-bottom: 210px;
+        }
+    }
+
+    .marquee {
+        background: var(--pink);
+        padding: 20px 0px;
+
+        .marquee-container {
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 22.5px;
+                    letter-spacing: 0.04em;
+                    color: var(--white);
+                }
+
+                img {
+                    margin: 0px 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero {
+        .hero-title {
+
+            h1 {
+                font-size: 60px;
+                line-height: 55px;
+                margin-top: 140px;
+                margin-bottom: 210px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero {
+        .marquee {
+            padding: 10px 0px;
+
+            .max-width {
+                padding: 0;
+            }
+        }
+    }
+}

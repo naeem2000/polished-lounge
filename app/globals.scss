@@ -11,17 +11,17 @@
   --pink: #CD5277;
   --white: #FFFFFF;
   --light-pink: #F7C0D7;
+  --lighter-pink: #FFF5F9;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: 'Kaoly', sans-serif;
 }
 
 .max-width {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;

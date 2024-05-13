@@ -49,9 +49,9 @@ export default function Services() {
 		<section className='services'>
 			<div className='max-width'>
 				<div className='nail-samples'>
-					<Image src={'/image 23.png'} width={482} height={594} alt='Sample' />
-					<Image src={'/image 5.png'} width={482} height={594} alt='Sample' />
-					<Image src={'/image 1.png'} width={482} height={594} alt='Sample' />
+					<Image src={'/image 23.png'} width={400} height={594} alt='Sample' />
+					<Image src={'/image 5.png'} width={400} height={594} alt='Sample' />
+					<Image src={'/image 1.png'} width={400} height={594} alt='Sample' />
 				</div>
 				<div className='offer'>
 					<h2>Service we offer</h2>

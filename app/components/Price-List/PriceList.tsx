@@ -51,32 +51,47 @@ export default function PriceList() {
 				<h2>Polished Lounge Price List</h2>
 				<div className='tabs'>
 					<div className='tabs-menu'>
-						<button onClick={() => tabs('manicure')}>
+						<button
+							onClick={() => tabs('manicure')}
+							className={tab === 'manicure' ? 'active' : ''}
+						>
 							Manicure
-							<div className={tab === 'manicure' ? 'active' : ''}></div>
 						</button>
-						<button onClick={() => tabs('pedicure')}>
+						<button
+							onClick={() => tabs('pedicure')}
+							className={tab === 'pedicure' ? 'active' : ''}
+						>
 							Pedicure
-							<div className={tab === 'pedicure' ? 'active' : ''}></div>
 						</button>
-						<button onClick={() => tabs('waxing')}>
+						<button
+							onClick={() => tabs('waxing')}
+							className={tab === 'waxing' ? 'active' : ''}
+						>
 							Waxing
-							<div className={tab === 'waxing' ? 'active' : ''}></div>
 						</button>
-						<button onClick={() => tabs('threading')}>
+						<button
+							onClick={() => tabs('threading')}
+							className={tab === 'threading' ? 'active' : ''}
+						>
 							Threading
-							<div className={tab === 'threading' ? 'active' : ''}></div>
 						</button>
-						<button onClick={() => tabs('brows')}>
+						<button
+							onClick={() => tabs('brows')}
+							className={tab === 'brows' ? 'active' : ''}
+						>
 							Brows & lashes
-							<div className={tab === 'brows' ? 'active' : ''}></div>
 						</button>
-						<button onClick={() => tabs('massages')}>
+						<button
+							onClick={() => tabs('massages')}
+							className={tab === 'massages' ? 'active' : ''}
+						>
 							Massages
-							<div className={tab === 'massages' ? 'active' : ''}></div>
 						</button>
-						<button onClick={() => tabs('facials')}>
-							Facials<div className={tab === 'facials' ? 'active' : ''}></div>
+						<button
+							onClick={() => tabs('facials')}
+							className={tab === 'facials' ? 'active' : ''}
+						>
+							Facials
 						</button>
 					</div>
 					<div className='tab-menu'>

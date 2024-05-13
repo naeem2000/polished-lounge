@@ -53,12 +53,21 @@
                 line-height: 30px;
                 letter-spacing: 0.04em;
                 color: var(--light-pink);
+                border-bottom: 5px solid transparent;
+            }
 
-                .active {
-                    position: absolute;
-                    border-bottom: 5px solid var(--pink);
-                    width: 70px;
-                }
+            button.active {
+                position: relative;
+            }
+
+            button.active::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0px;
+                width: 55px;
+                /* Adjust as needed */
+                border-bottom: 5px solid var(--pink);
             }
         }
 
@@ -129,11 +138,13 @@
                         color: var(--light-pink);
                     }
                 }
-
             }
+
         }
+
     }
 }
+
 
 @media screen and (max-width: 1280px) {
     .prices {
@@ -165,7 +176,7 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 860px) {
     .prices {
         .tabs {
             padding: 0px 20px;
@@ -174,7 +185,23 @@
                 justify-content: center;
 
                 button {
-                    margin: 10px;
+                    margin: 5px 10px;
+                }
+            }
+
+            .tab-menu {
+
+                .item {
+
+                    &>div {
+
+                        &>div {
+
+                            p {
+                                max-width: 465px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -229,10 +256,12 @@
 
                                 h3 {
                                     font-size: 17px;
+                                    max-width: 200px;
                                 }
 
                                 p {
                                     font-size: 13px;
+                                    max-width: 200px;
                                 }
 
                                 &:nth-child(2) {
@@ -252,6 +281,10 @@
                                                 margin-left: 20px;
                                                 line-height: 25px;
                                                 font-size: 17px;
+
+                                                &:first-child {
+                                                    margin-left: 0;
+                                                }
                                             }
                                         }
                                     }

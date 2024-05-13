@@ -1,7 +1,7 @@
-import Hero from './components/Hero/Hero';
-import Header from './components/Header/Header';
-import Nav from './components/Nav/Nav';
+import PriceList from './components/Price-List/PriceList';
 import Services from './components/Services/Services';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 
 export default function Home() {
 	return (
@@ -9,6 +9,7 @@ export default function Home() {
 			<Header />
 			<Hero />
 			<Services />
+			<PriceList />
 		</>
 	);
 }

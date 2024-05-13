@@ -72,7 +72,7 @@ export default function PriceList() {
 							<div className={tab === 'brows' ? 'active' : ''}></div>
 						</button>
 						<button onClick={() => tabs('massages')}>
-							Massages{' '}
+							Massages
 							<div className={tab === 'massages' ? 'active' : ''}></div>
 						</button>
 						<button onClick={() => tabs('facials')}>

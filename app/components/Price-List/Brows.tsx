@@ -11,7 +11,7 @@ export default function Brows() {
 						<div>
 							<h3>{item.title}</h3>
 						</div>
-						<p>{item.title}</p>
+						<p>{item.price}</p>
 					</div>
 				);
 			})}

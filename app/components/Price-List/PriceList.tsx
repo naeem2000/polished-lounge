@@ -1,15 +1,15 @@
 'use client';
 
-import Image from 'next/image';
-import './Price-list.scss';
 import React, { useState } from 'react';
+import Threading from './Threading';
 import Manicure from './Manicure';
 import Pedicure from './Pedicure';
-import Waxing from './Waxing';
-import Threading from './Threading';
-import Brows from './Brows';
 import Massages from './Massages';
 import Facials from './Facials';
+import Image from 'next/image';
+import Waxing from './Waxing';
+import Brows from './Brows';
+import './Price-list.scss';
 
 export default function PriceList() {
 	const [tab, setTab] = useState<string>('manicure');

@@ -13,7 +13,7 @@ export default function Services() {
 		infinite: false,
 		speed: 500,
 		autoplaySpeed: 2000,
-		autoplay: false,
+		autoplay: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		className: 'slider',

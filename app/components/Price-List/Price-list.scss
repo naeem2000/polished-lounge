@@ -54,6 +54,16 @@
                 letter-spacing: 0.04em;
                 color: var(--light-pink);
                 border-bottom: 5px solid transparent;
+                transition: all ease .5s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            button.active {
+                position: relative;
+                transform: scale(1.2);
             }
 
             button.active {
@@ -160,6 +170,9 @@
             }
 
             .tab-menu {
+                min-height: unset;
+                max-height: 120vh;
+
                 .item {
 
                     >div {
@@ -247,6 +260,8 @@
                 }
 
                 .tab-menu {
+                    min-height: unset;
+                    max-height: 145vh;
 
                     .item {
 

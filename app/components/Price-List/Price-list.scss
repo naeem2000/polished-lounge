@@ -203,6 +203,9 @@
             }
 
             .tab-menu {
+                min-height: unset;
+                max-height: unset;
+                height: 100%;
 
                 .item {
 
@@ -260,8 +263,7 @@
                 }
 
                 .tab-menu {
-                    min-height: unset;
-                    max-height: 145vh;
+
 
                     .item {
 

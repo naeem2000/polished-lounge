@@ -18,9 +18,19 @@ export default function Visit() {
 							polishedloungesalon@gmail.com
 						</a>
 					</div>
+					<p>
+						please note that you have to book a session. We do not allow any
+						walk-ins.
+					</p>
 				</div>
 				<div className='light-pink'>
-					<Image src='/Nail Gif.gif' width={720} height={887} alt='hand' />
+					<Image
+						src='/Nail Gif.gif'
+						width={720}
+						height={887}
+						alt='hand'
+						unoptimized={true}
+					/>
 				</div>
 			</div>
 		</section>

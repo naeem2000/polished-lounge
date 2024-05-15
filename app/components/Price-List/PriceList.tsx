@@ -43,7 +43,6 @@ export default function PriceList() {
 		}
 	};
 
-	console.log(tab);
 	return (
 		<section className='prices'>
 			<div className='max-width'>

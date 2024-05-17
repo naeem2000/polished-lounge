@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 import React from 'react';
 import './Reviews.scss';
+import { reviews } from '../data';
 
 export default function Reviews() {
 	const settings = {
@@ -58,13 +59,33 @@ export default function Reviews() {
 			<div className='review max-width'>
 				<h3>Here’s what our clients has to say!!</h3>
 				<p>
-					Polished lounge has been running for some time no and here’s what some
-					clients has to say:
+					Polished lounge has been running for some time now and here’s what
+					some clients has to say:
 				</p>
 				<Slider {...settings}>
-					<div>awe</div> <div>awe</div> <div>awe</div> <div>awe</div>
-					<div>awe</div> <div>awe</div>
-					<div>awe</div>
+					{reviews.map((item) => {
+						return (
+							<div className='review-item' key={item.id}>
+								{Array.from({ length: item.stars }).map(
+									(_: any, index: number) => {
+										return (
+											<div className='star-row'>
+												<Image
+													key={index}
+													width={17}
+													height={16}
+													src={item.image}
+													alt='sample'
+												/>
+											</div>
+										);
+									}
+								)}
+								<p>{item.review}</p>
+								<label>{item.person}</label>
+							</div>
+						);
+					})}
 				</Slider>
 			</div>
 		</section>

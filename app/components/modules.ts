@@ -45,3 +45,11 @@ export interface Prices {
 		price2: string | null;
 	}[];
 }
+
+export interface Reviews {
+	id: number;
+	stars: number;
+	image: string;
+	review: string;
+	person: string;
+}

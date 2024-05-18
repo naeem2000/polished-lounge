@@ -1,4 +1,5 @@
-import { Prices } from './modules';
+import star from '../../public/review-star.svg';
+import { Prices, Reviews } from './modules';
 
 export const prices: Prices = {
 	manicure: [
@@ -405,3 +406,55 @@ export const prices: Prices = {
 		},
 	],
 };
+
+export const reviews: Reviews[] = [
+	{
+		id: 0,
+		stars: 3,
+		image: star,
+		review: '“Promising salon that is worth the money you pay”',
+		person: 'Anonymous',
+	},
+	{
+		id: 1,
+		stars: 5,
+		image: star,
+		review: '“Promising salon that is worth the money you pay”',
+		person: 'Anonymous',
+	},
+	{
+		id: 2,
+		stars: 1,
+		image: star,
+		review: '“Promising salon that is worth the money you pay”',
+		person: 'Anonymous',
+	},
+	{
+		id: 3,
+		stars: 2,
+		image: star,
+		review: '“Promising salon that is worth the money you pay”',
+		person: 'Anonymous',
+	},
+	{
+		id: 4,
+		stars: 3,
+		image: star,
+		review: '“Promising salon that is worth the money you pay”',
+		person: 'Anonymous',
+	},
+	{
+		id: 5,
+		stars: 4,
+		image: star,
+		review: '“Promising salon that is worth the money you pay”',
+		person: 'Anonymous',
+	},
+	{
+		id: 6,
+		stars: 1,
+		image: star,
+		review: '“Promising salon that is worth the money you pay”',
+		person: 'Anonymous',
+	},
+];

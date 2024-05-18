@@ -33,7 +33,131 @@
         }
 
         .slider {
+            padding: 0;
             margin-top: 80px;
+
+            .review-item {
+                width: 278px;
+                height: 159px;
+                margin-bottom: 50px;
+
+                .star-row {
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    max-width: 277px;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    letter-spacing: 0.04em;
+                    text-align: left;
+                    color: var(--pink);
+                    margin-bottom: 10px;
+                }
+
+                label {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 22.5px;
+                    letter-spacing: 0.04em;
+                    text-align: left;
+                    color: var(--pink);
+                }
+            }
+
+            .slick-dots li button:before {
+                font-size: 10px !important;
+            }
+
+            .slick-dots li.slick-active button:before {
+                color: var(--pink) !important;
+            }
+
+            .slick-dots li button:before {
+                opacity: 1 !important;
+                color: var(--light-pink) !important;
+            }
+
+            .slick-prev,
+            .slick-next {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .reviews {
+
+        .image-reviews {
+            .max-width {
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .reviews {
+
+        .review {
+            margin-top: 50px;
+
+            h3 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                letter-spacing: 0.04em;
+                text-align: left;
+                color: var(--pink);
+            }
+
+            p {
+                margin-top: 10px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 22.5px;
+                letter-spacing: 0.04em;
+                text-align: left;
+                color: var(--pink);
+            }
+
+            .slider {
+                padding: 0;
+                margin-top: 30px;
+
+                .review-item {
+                    width: 230px !important;
+                    margin-bottom: 10px;
+
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .reviews {
+
+        .image-reviews {
+            .max-width {
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }

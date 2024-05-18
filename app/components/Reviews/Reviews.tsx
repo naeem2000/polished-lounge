@@ -14,7 +14,7 @@ export default function Reviews() {
 		infinite: false,
 		speed: 500,
 		autoplaySpeed: 2000,
-		autoplay: true,
+		autoplay: false,
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		className: 'slider',
@@ -66,10 +66,10 @@ export default function Reviews() {
 					{reviews.map((item) => {
 						return (
 							<div className='review-item' key={item.id}>
-								{Array.from({ length: item.stars }).map(
-									(_: any, index: number) => {
-										return (
-											<div className='star-row'>
+								<div className='star-row'>
+									{Array.from({ length: item.stars }).map(
+										(_: any, index: number) => {
+											return (
 												<Image
 													key={index}
 													width={17}
@@ -77,10 +77,10 @@ export default function Reviews() {
 													src={item.image}
 													alt='sample'
 												/>
-											</div>
-										);
-									}
-								)}
+											);
+										}
+									)}
+								</div>
 								<p>{item.review}</p>
 								<label>{item.person}</label>
 							</div>

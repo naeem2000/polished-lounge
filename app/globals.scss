@@ -27,6 +27,11 @@
   margin-right: auto;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 @media screen and (max-width: 1024px) {
   .max-width {
     padding-left: 20px;

@@ -1,12 +1,12 @@
 import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
+import Nav from '../Nav/Nav';
 import React from 'react';
 import './Hero.scss';
-import Nav from '../Nav/Nav';
 
 export default function Hero() {
 	return (
-		<section className='hero'>
+		<section className='hero' id='home'>
 			<div className='max-width'>
 				<Nav />
 				<div className='hero-title'>

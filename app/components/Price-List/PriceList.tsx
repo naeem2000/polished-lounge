@@ -44,7 +44,7 @@ export default function PriceList() {
 	};
 
 	return (
-		<section className='prices'>
+		<section className='prices' id='prices'>
 			<div className='max-width'>
 				<div className='prices-samples'>
 					<Image src={'/image 7.png'} alt='1' width={360} height={360} />

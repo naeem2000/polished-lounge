@@ -92,7 +92,6 @@
 
 @media screen and (max-width: 1366px) {
     .reviews {
-
         .image-reviews {
             .max-width {
 
@@ -100,6 +99,11 @@
                     width: 50%;
                 }
             }
+        }
+
+        .review {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }
@@ -142,6 +146,10 @@
                     p {
                         font-size: 17px;
                     }
+                }
+
+                .slick-list {
+                    padding: 0 0px !important;
                 }
             }
         }

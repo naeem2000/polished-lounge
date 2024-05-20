@@ -6,10 +6,10 @@ import './Nav.scss';
 export default function Nav() {
 	return (
 		<nav>
-			<a className='link' href=''>
+			<a className='link' href='#home'>
 				Home
 			</a>
-			<a className='link' href=''>
+			<a className='link' href='#prices'>
 				Prices
 			</a>
 			<Link className='link' href='/contact'>

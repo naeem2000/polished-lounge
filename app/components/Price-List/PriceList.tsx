@@ -44,7 +44,7 @@ export default function PriceList() {
 	};
 
 	return (
-		<section className='prices' id='prices'>
+		<section className='prices'>
 			<div className='max-width'>
 				<div className='prices-samples'>
 					<Image src={'/image 7.png'} alt='1' width={360} height={360} />
@@ -53,7 +53,7 @@ export default function PriceList() {
 					<Image src={'/image 10.png'} alt='4' width={360} height={360} />
 				</div>
 			</div>
-			<div className='max-width'>
+			<div className='max-width' id='prices'>
 				<h2>Polished Lounge Price List</h2>
 				<div className='tabs'>
 					<div className='tabs-menu'>

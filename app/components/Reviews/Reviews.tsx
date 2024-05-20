@@ -2,14 +2,14 @@
 
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import { reviews } from '../data';
 import Slider from 'react-slick';
 import Image from 'next/image';
 import React from 'react';
 import './Reviews.scss';
-import { reviews } from '../data';
 
 export default function Reviews() {
-	const settings = {
+	const settingsReview = {
 		dots: true,
 		infinite: false,
 		speed: 500,
@@ -24,6 +24,14 @@ export default function Reviews() {
 				breakpoint: 1024,
 				settings: {
 					slidesToShow: 2,
+					slidesToScroll: 1,
+					centerMode: false,
+				},
+			},
+			{
+				breakpoint: 850,
+				settings: {
+					slidesToShow: 3,
 					slidesToScroll: 1,
 					centerMode: false,
 				},
@@ -62,7 +70,7 @@ export default function Reviews() {
 					Polished lounge has been running for some time now and here’s what
 					some clients has to say:
 				</p>
-				<Slider {...settings}>
+				<Slider {...settingsReview}>
 					{reviews.map((item) => {
 						return (
 							<div className='review-item' key={item.id}>

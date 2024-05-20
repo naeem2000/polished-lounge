@@ -1,12 +1,13 @@
 .services {
     .max-width {
+        padding: 0;
+
         .nail-samples {
             display: flex;
             flex-direction: row;
 
             img {
-                max-width: 482px;
-                width: 100%;
+                flex: 1;
                 height: auto;
             }
         }
@@ -79,10 +80,8 @@
             padding: 0;
 
             .nail-samples {
-                display: flex;
+                flex-direction: column;
                 align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
             }
         }
     }
@@ -91,6 +90,10 @@
 @media screen and (max-width: 1024px) {
     .services {
         .max-width {
+            .nail-samples {
+                flex-direction: column;
+            }
+
             .offer {
                 .slider {
                     .offered {

@@ -106,8 +106,8 @@ footer {
     footer {
 
         .footer-body {
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
 
         }
     }
@@ -139,6 +139,15 @@ footer {
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        .footer-body {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }

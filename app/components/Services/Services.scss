@@ -74,6 +74,13 @@
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .services {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
 @media screen and (max-width: 1366px) {
     .services {
         .max-width {

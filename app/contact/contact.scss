@@ -116,6 +116,24 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .contact {
+        .contact-body {
+            flex-direction: column;
+
+            .contact-left,
+            .contact-right {
+                width: 100%;
+            }
+
+            .contact-left {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .contact {
         .marquee {
@@ -136,14 +154,7 @@
         }
 
         .contact-body {
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
 
-            .contact-left,
-            .contact-right {
-                width: 100%;
-            }
 
             .contact-right {
                 padding: 50px 20px 0px;
@@ -161,8 +172,7 @@
             }
 
             .contact-left {
-                align-items: center;
-                justify-content: center;
+
 
                 img {
                     width: 100%;

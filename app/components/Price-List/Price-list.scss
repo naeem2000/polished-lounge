@@ -152,6 +152,14 @@
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .prices {
+        .max-width {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+}
 
 @media screen and (max-width: 1280px) {
     .prices {
